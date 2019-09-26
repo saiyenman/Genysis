@@ -1,0 +1,28 @@
+
+    <form #form="ngForm" class="form-signin p-5" style="margin-left: 10%;margin-right: 10%;" (ngSubmit)="onSubmit(form.value)" >
+            <h2 class="text-center">Demander une permission</h2>
+            <input type="text" class="form-control" name="titre" placeholder="Titre du permis d'exploitation de ressources génétiques" ngModel>
+            <br>
+            <label>Type de permis</label>
+            <select id="type" class="browser-default custom-select mb-4">
+                    <option value="1" selected>Professionel</option>
+                    <option value="2">Academique</option>
+                    <option value="3">Recherche</option>
+                    <option value="4">Personnelle</option>
+                </select>
+                
+            <input type="text" class="form-control mb-3" name="email" placeholder="Adresse mail" ngModel>
+            <textarea class="form-control mb-3" rows="5" name="description" placeholder="Description de la demande" ngModel></textarea>
+            
+            <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile" (change)="fileEvent($event)" ngModel>
+                    <label class="custom-file-label" for="customFile">Choisir un fichier</label>
+            </div>
+            <div>{{fileName}}</div>
+
+            <button type="submit" class="btn btn-lg btn-success btn-block btn-signin">
+                    Envoyer
+            </button>
+                <br>
+            </form>
+    

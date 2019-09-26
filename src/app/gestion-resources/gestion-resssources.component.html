@@ -1,0 +1,45 @@
+<form #form="ngForm" class="form-signin" (ngSubmit)="onSubmit(form.value)" >
+        <br>
+        <input type="text"  class="form-control" name="nomCommunFr" placeholder="Nom commun Fr" [(ngModel)]="resource.nomScientifique">
+        <br>
+        <input type="text"  class="form-control" name="nomCommunAr" placeholder="Nom commun Ar" [(ngModel)]="resource.nomScientifique">
+        <br>
+        <input type="text"  class="form-control" name="nomScientifique" placeholder="Nom scientifique" [(ngModel)]="resource.nomScientifique">
+        <br>
+        <input type="text"  class="form-control" name="description" placeholder="Description" [(ngModel)]="resource.description">
+        <br>
+        <input type="text"  class="form-control" name="morphologie" placeholder="Morphologie" [(ngModel)]="resource.morphologie">
+        <br>
+        <input type="text"  class="form-control" name="formuleChimique" placeholder="Formule chimique" [(ngModel)]="resource.formuleChimique">
+        <br>
+        <input type="text"  class="form-control" name="structure" placeholder="Structure" [(ngModel)]="resource.structure">
+        <br>
+        <input type="text"  class="form-control" name="environnement" placeholder="Environement" [(ngModel)]="resource.environnement">
+        <br>
+        <input type="text"  class="form-control" name="cycleVie" placeholder="Cycle de vie" [(ngModel)]="resource.cycleVie">
+        <br>
+         <input type="text"  class="form-control" name="transmission" placeholder="Transmission" [(ngModel)]="resource.environnement">
+        <br>
+
+        <div class="col-md-6 offset-md-3">
+                <h6>Inserer une image</h6>            
+                <div class="form-group">
+                    <input type="file" name="image" (change)="fileProgress($event)" />
+                </div>
+                <div *ngIf="fileUploadProgress">
+                    Upload progress: {{ fileUploadProgress }}
+                </div>
+                <div class="image-preview mb-3" *ngIf="previewUrl">
+                    <img [src]="previewUrl" height="300" />                 
+                </div>
+     
+                <div class="mb-3" *ngIf="uploadedFilePath">
+                    {{uploadedFilePath}}
+                </div>
+            </div>
+
+        <button type="submit" class="btn btn-lg btn-primary btn-block btn-signin">
+                Ajouter
+            </button>
+            <br>
+        </form><!-- /form -->

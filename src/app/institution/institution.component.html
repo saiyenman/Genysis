@@ -1,0 +1,46 @@
+<div class="row">
+    <div *ngFor="let institution of institutions" class="col-12 mt-3">
+        <div class="card">
+            <div class="card-horizontal">
+                <div class="img-square-wrapper">
+                    <img src="../../assets/img/ins.png" alt="Card image cap">
+                </div>
+                <div class="card-body row">
+      
+             <div class="col-8">
+                    <h6 class="card-title"><strong>Nom: </strong> {{ institution.nom }}</h6>
+                    <h6 class="card-title"><strong>Raison sociale: </strong>{{ institution.raisonSociale }}</h6>
+                    <h6 class="card-title"><strong>Site_web: </strong> {{ institution.siteWeb }}</h6>
+                    <h6 class="card-title"><strong>E-mail: </strong> {{ institution.email }}</h6>
+                </div>  
+       <div class="col-4">
+                 <div class="row d-flex justify-content-around font-weight-bold">   
+  <a class="btn btn-danger">Supprimer</a>
+   </div>
+                 </div> 
+                </div>
+            </div>
+        </div>
+        <div class="card">
+                <div class="card-horizontal">
+                    <div class="img-square-wrapper">
+                        <img src="../../assets/img/ins.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body row">
+          
+                 <div class="col-8">
+                        <h6 class="card-title"><strong>Nom: </strong> {{ institution.nom }}</h6>
+                        <h6 class="card-title"><strong>Raison sociale: </strong>{{ institution.raisonSociale }}</h6>
+                        <h6 class="card-title"><strong>Site_web: </strong> {{ institution.siteWeb }}</h6>
+                        <h6 class="card-title"><strong>E-mail: </strong> {{ institution.email }}</h6>
+                    </div>  
+           <div class="col-4">
+                     <div class="row d-flex justify-content-around font-weight-bold">   
+      <a class="btn btn-danger">Supprimer</a>
+       </div>
+                     </div> 
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

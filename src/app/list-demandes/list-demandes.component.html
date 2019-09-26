@@ -1,0 +1,36 @@
+<div class="col-md-10">
+    <div *ngFor="let demande of demandes; let i= index" id="accordion" class="mt-4">
+            <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    {{ demande.titre }}
+                </button>
+                </h5>
+            </div>
+        
+            <div [style.background-color]="valides[i]==true ? '#b3f9b0': ''" id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="demande-image" src="../../assets/img/demande.png">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-9">
+                                        <h6 class="font-weight-bold">Description: </h6> {{ demande.description }}
+                                        <h6 class="font-weight-bold">Type: </h6> {{ demande.type }}
+                                        <h6 class="font-weight-bold">E-mail: </h6> {{ demande.email }}
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-success" (click)="valider(i)">Valider</button>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+</div>
+

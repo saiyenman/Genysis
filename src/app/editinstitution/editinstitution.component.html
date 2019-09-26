@@ -1,0 +1,117 @@
+<div class="container">
+	<h2>Modifier une institution</h2>
+	<div class="field field--three-quarter">
+		<input class="field__input input input--text input--required" id="1" type="text" />
+		<label class="field__label label--required" for="1">Nom de l'institution</label>
+	</div>
+	<div class="field field--quarter">
+		<input class="field__input input input--text" id="2" type="text" />
+		<label class="field__label label--required" for="1">Raison sociale</label>
+		<!--<input class="field__input input input--text" id="3" type="file" accept="image/*" />-->
+	</div>
+	
+
+	<div class="field field--half">
+			<input class="field__input input input--text" id="description" type="text" name="nature" list="nature">
+			<datalist id="nature">
+					<option value="nature 1">
+					<option value="nature 2">
+				</datalist>
+			<label class="field__label label--required" for="5">Nature de l'établissement</label>	
+		</div>
+	<div class="field field--half">
+		<input class="field__input input input--text" id="6" type="date" />
+		<label class="field__label label--required" for="6">Année de création</label>
+	</div>
+	<div class="field field--half">
+			<input class="field__input input input--text" id="ta" type="text"  >
+			<label class="field__label label--required" for="4">Téléphone fixe</label>	
+	</div>
+	
+	<div class="field field--half">
+			<input class="field__input input input--text" id="ta" type="text"  >
+			<label class="field__label label--required" for="4">Fax</label>	
+	</div>
+	<div class="field field--half">
+			<input class="field__input input input--text" id="ta" type="email"  >
+			<label class="field__label label--required" for="4">Email</label>	
+	</div>
+	<div class="field field--half">
+			<input class="field__input input input--text input--required" id="1" type="text" />
+			<label class="field__label label--required" for="1">Site web</label>
+	</div>
+
+	
+	
+	<div class="field field--block">
+		<textarea class="field__input input input--textarea" id="7" type="text"></textarea>
+		<label class="field__label label--required" for="7">Adresse</label>
+	</div>
+	<div class="field field--half">
+			<input class="field__input input input--text" id="ta" type="text" name="catégorie" list="catégorie" >
+				<datalist id="catégorie">
+					<option value="catégorie 1">
+					<option value="catégorie 2">
+				</datalist>
+			<label class="field__label label--required" for="4">Catégorie</label>	
+	</div>
+	<div class="field field--half">
+			<input class="field__input input input--text" id="ta" type="text" name="status" list="status" >
+				<datalist id="status">
+					<option value="status 1">
+					<option value="status 2">
+				</datalist>
+			<label class="field__label label--required" for="4">Status juridique</label>	
+	</div>
+	<div class="field field--half">
+			<input class="field__input input input--text" id="ta" type="text" name="type" list="type" >
+				<datalist id="type">
+					<option value="type 1">
+					<option value="type 2">
+				</datalist>
+			<label class="field__label label--required" for="4">Type</label>	
+	</div>
+	<div class="field field--half">
+			<input class="field__input input input--text" id="ta" type="text" name="secteur" list="secteur" >
+				<datalist id="secteur">
+					<option value="secteur 1">
+					<option value="secteur 2">
+				</datalist>
+			<label class="field__label label--required" for="4">Secteur d'activité</label>	
+	</div>
+	<br>
+	<div class="field field--three-quarter">
+			<input class="field__input input input--text" id="description" type="text" name="implication" list="implication">
+			<datalist id="implication">
+					<option value="implication 1">
+					<option value="implication 2">
+				</datalist>
+			<label class="field__label label--required" for="5">Type d'implication à l'APA</label>	
+		</div>
+	<div class="field field--quarter">
+		<input class="field__input input input--text" id="6" type="date" />
+		<label class="field__label label--required" for="6">Année d'implication</label>
+	</div>
+	<div class="field field--block">
+			<input class="field__input input input--text" id="ta" type="text" name="but" list="but" >
+				<datalist id="but">
+					<option value="but 1">
+					<option value="but 2">
+				</datalist>
+			<label class="field__label label--required" for="4">But d'accès aux ressources génétiques</label>	
+	</div>
+	
+	<div class="field field--block">
+			<textarea class="field__input input input--textarea" id="7" type="text"></textarea>
+			<label class="field__label label--required" for="7">Information additionelles</label>
+		</div>
+	<div class="field field--block form-action">
+        <a routerLink=""><button class="btn btn-success">Modifier</button></a>
+        <a routerLink=".."><button class="btn btn-danger">Annuler</button></a>
+	</div>
+	
+</div>
+
+
+
+

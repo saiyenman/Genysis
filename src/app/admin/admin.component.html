@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-sm-3">
+
+<section class="app">
+  <aside class="sidebar">
+         <header>
+        Administration
+      </header>
+    <nav class="sidebar-nav">
+ 
+      <ul>
+        <li>
+          <a href="#"><i class="ion-bag"></i> <span>Ressources Genetiques</span></a>
+          <ul class="nav-flyout">
+            <li>
+              <a [routerLink]="[ '/admin/gestion-resources/add' ]"><i class="ion-ios-color-filter-outline"></i>Ajouter une ressource genetique</a>
+            </li>
+            <li>
+              <a [routerLink]="[ '/admin/edit-resources' ]"><i class="ion-ios-clock-outline"></i>Modifier une ressource genetique</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a [routerLink]="[ '/admin/list-demandes' ]"><i class="ion-ios-settings"></i> <span class="">Demandes d'APA</span></a>
+          
+        </li>
+        <li>
+          <a [routerLink]="[ '/admin/users' ]"><i class="ion-ios-briefcase-outline"></i> <span class="">Utilisateurs</span></a>
+          
+        </li>
+        <li>
+          <a [routerLink]="['/admin/annuaire/institutions']"><i class="ion-ios-analytics-outline"></i> <span class="">Institutions</span></a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+</section>
+    </div>
+
+    <div class="col-sm-9">
+       <router-outlet></router-outlet>
+    </div>
+</div>

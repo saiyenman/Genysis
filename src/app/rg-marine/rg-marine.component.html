@@ -1,0 +1,14 @@
+<div class="row my-4 px-5">
+
+        <div *ngFor="let rgMarine of rgMarines" class="col-md-3 card" class="card" style="width: 14rem;">
+                <img class="card-img-top" [src]="rgMarine.cycleVie" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> {{ rgMarine.nomScientifique }}  </h5>
+                  <p  class="card-text"> {{ rgMarine.description }} </p>
+                  <div class="row d-flex justify-content-around font-weight-bold">
+                        <!-- <a class="btn btn-info" >Modifier</a>
+                        <a class="btn btn-danger">Supprimer</a> -->
+                  </div>
+                </div>
+        </div>
+</div>
